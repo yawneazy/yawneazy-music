@@ -17,3 +17,29 @@ body {
   height: 100vh;
   object-fit: cover;
 }
+
+.yawneazy-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 5rem;
+  color: white;
+  letter-spacing: 20px;
+  z-index: 1; 
+  text-align: center;
+}
+
+.coming-soon-msg {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 10px;
+  z-index: 1; 
+  text-align: center;
+}

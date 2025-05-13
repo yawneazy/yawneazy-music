@@ -9,6 +9,8 @@ function App() {
     <Router>
       <img src={homeImage} alt="Home" className="full-screen-image" />
       {/* COMING SOON */}
+      <div className="yawneazy-text">YAWNEAZY</div>
+      <div className="coming-soon-msg">Coming soon...</div>
       <Routes> 
         <Route path="/" element={<div>Home</div>} />
         <Route path="/about" element={<About />} />
