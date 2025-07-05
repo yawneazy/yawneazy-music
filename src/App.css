@@ -37,17 +37,17 @@ body {
   /* justify-content: center; */
   justify-content: space-between;
   /* padding: 4rem 2rem; */
-  padding-top: 30rem;
-  padding-bottom: 4rem;
+  padding-top: 50rem;
+  padding-bottom: 3rem;
   text-align: center;
 }
 
 .yawneazy-text {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 7rem;
+  font-size: 10rem;
   color: white;
-  letter-spacing: 20px;
-  margin-bottom: 2rem;
+  letter-spacing: 40px;
+  margin-bottom: 6rem;
 }
 
 .nav-links {
@@ -59,7 +59,7 @@ body {
 .nav-links a {
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   transition: color 0.3s ease;
   font-family: 'Inter', sans-serif;
 }
