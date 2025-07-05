@@ -14,9 +14,9 @@ function App() {
         <div className="overlay-content">
           <div className="yawneazy-text">YAWNEAZY</div>
           <div className="nav-links">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/music">Music</Link>
+            <Link to="/">HOME</Link>
+            <Link to="/about">ABOUT</Link>
+            <Link to="/music">MUSIC</Link>
           </div>
         </div>
       </div>
