@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: #1e1e1e;
 }
 
 #root {
@@ -13,16 +14,6 @@ body {
   position: relative;
   height: 100vh;
   width: 100vw;
-}
-
-.full-screen-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
 
 .overlay-content {
@@ -41,14 +32,14 @@ body {
   padding-bottom: 3rem;
   text-align: center;
 }
-
+/* 
 .yawneazy-text {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 10rem;
   color: white;
   letter-spacing: 40px;
   margin-bottom: 6rem;
-}
+} */
 
 .nav-links {
   display: flex;
@@ -66,4 +57,32 @@ body {
 
 .nav-links a:hover {
   color: #cccccc;
+}
+
+/* Make the entire container fill the viewport */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  /* full viewport height */
+  background-color: #000; /* Or any background you like */
+  position: relative;
+}
+
+/* Style the polaroid image */
+.polaroid-image {
+  position: absolute;
+  top: 2rem;    /* distance from top */
+  left: 2rem;   /* distance from left */
+  width: 300px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.6s ease, box-shadow 0.6s ease-in-out;
+  border-radius: 4px;
+}
+
+/* Hover effect for interactivity */
+.polaroid-image:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
 }

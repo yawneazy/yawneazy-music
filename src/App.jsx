@@ -1,32 +1,36 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import homeImage from './images/home-image.jpg';
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import { useState } from 'react';
 import './App.css';
 import { About } from './pages/About';
 import { Music } from './pages/Music';
+import bwPianoPhoto from './images/bw-piano-img.png';
+import pianoPhoto from './images/piano-img.png';
 
 function App() {
+  const [showMusic, setShowMusic] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handlePolaroidClick = () => {
+    setShowMusic(true);
+  };
+  
   return (
-    <Router>
-      <div className="hero-container">
-        <img src={homeImage} alt="Home" className="full-screen-image" />
-
-        {/* Overlaid content */}
-        <div className="overlay-content">
-          <div className="yawneazy-text">YAWNEAZY</div>
-          <div className="nav-links">
-            <Link to="/">HOME</Link>
-            <Link to="/about">ABOUT</Link>
-            <Link to="/music">MUSIC</Link>
-          </div>
-        </div>
-      </div>
-
-      <Routes>
-        {/* <Route path="/" element={<div>Home</div>} /> */}
-        <Route path="/about" element={<About />} />
-        <Route path="/music" element={<Music />} />
-      </Routes>
-    </Router>
+    <div className="hero-container">
+      {!showMusic ? (
+        <>
+          <img
+              src={isHovered ? pianoPhoto : bwPianoPhoto}
+            alt="Polaroid of me"
+            className="polaroid-image"
+            onClick={handlePolaroidClick}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          />
+        </>
+      ) : (
+        <Music />
+      )}
+    </div>
   );
 }
 
