@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 export function About() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <div style={{ padding: '2rem', color: 'white', maxWidth: '600px', margin: '0 auto'}}>
        {/* <button className="back-btn"

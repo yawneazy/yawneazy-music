@@ -7,10 +7,11 @@ body {
 
 .back-btn {
     /* marginBottom: '1rem'; */
-    padding: '0.5rem 1rem';
-    background: 'transparent';
-    color: 'white';
-    border: '1px solid white';
+    /* padding: '0.5rem 1rem'; */
+    /* background: 'transparent'; */
+    /* color: "#FFF";
+    color */
+    /* border: '1px solid white'; */
     /* borderRadius: '4px'; */
     cursor: 'pointer';
 }
@@ -71,19 +72,25 @@ body {
   color: #cccccc;
 }
 
-/* Make the entire container fill the viewport */
-.hero-container {
+.polaroid-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  height: 100vh;  /* full viewport height */
-  background-color: #000; /* Or any background you like */
-  position: relative;
+  gap: 20px;
 }
 
-/* Style the polaroid image */
 .polaroid-image {
   position: absolute;
+  width: 300px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.6s ease, box-shadow 0.6s ease-in-out;
+  border-radius: 4px;
+}
+
+.event-flyers {
+  /* position: absolute; */
+  /* display: flex; */
   width: 300px;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -120,6 +127,11 @@ body {
 .polaroid-image.contact {
   top: 35rem;
   left: 40rem;
+  box-shadow: none;
+}
+
+.polaroid-image.contact:hover {
+  box-shadow: none;
 }
 
 /* Hover effect for interactivity */
@@ -129,8 +141,6 @@ body {
 }
 
 @media (max-width: 768) {
-  .polaroids {
-    flex-direction: column;
-    align-items: center;
-  }
+
+
 }

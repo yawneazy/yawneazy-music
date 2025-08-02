@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './App.css';
 import { About } from './pages/About';
 import { Music } from './pages/Music';
+import { Shows } from './pages/Shows';
 import bwPianoPhoto from './images/bw-piano-img.png';
 import pianoPhoto from './images/piano-img.png';
 import bwBabyPhoto from './images/bw-baby-img.png';
@@ -37,10 +38,10 @@ function App() {
   };
 
   return (
-    <div className="hero-container">
-       <div className="intro-text">
+    <div className="polaroid-container">
+       {/* <div className="intro-text">
       <p>Hello! I’m Alyssa — developer, designer, musician, and artist. Welcome to my site!</p>
-    </div>
+    </div> */}
           {!activePage && (
         <>
            <img
