@@ -1,0 +1,35 @@
+.shows-page {
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .shows-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    align-items: center;
+  }
+  
+  .show-card {
+    background-color: #111;
+    border: 1px solid #333;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  .show-card h3 {
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  
+  .show-card button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+  }

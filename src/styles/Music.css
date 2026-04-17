@@ -1,0 +1,10 @@
+.music-embed {
+    max-width: 700px;   /* controls size */
+    margin: 2rem auto;  /* centers it + adds top/bottom spacing */
+    padding: 0 1rem;    /* gives side breathing room on mobile */
+  }
+
+  .music-embed iframe {
+    display: block;
+    width: 100%;
+  }
