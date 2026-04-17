@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #1e1e1e;
+  background-color: #EEE9E9;
+  /* background-color: #1e1e1e; */
 }
 
 .back-btn {
@@ -14,6 +17,10 @@ body {
     /* border: '1px solid white'; */
     /* borderRadius: '4px'; */
     cursor: 'pointer';
+}
+
+h1 {
+  font-size: 50px;
 }
 
 #root {
@@ -28,13 +35,16 @@ body {
 }
 
 .intro-text {
+  font-family: 'Give You Glory', cursive;
   position: absolute;
-  top: 20px;
-  right: 20px;
   color: #FFF;
-  max-width: 300px;
-  text-align: right;
-
+  font-size: 30px;
+  text-align: left;
+  margin: 10px auto; 
+  max-width: 500px;                     
+  line-height: .5;  
+  right: 30px;
+  top: 30px;
 }
 
 .overlay-content {
@@ -83,7 +93,7 @@ body {
   position: absolute;
   width: 300px;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); */
   transition: transform 0.6s ease, box-shadow 0.6s ease-in-out;
   border-radius: 4px;
 }
@@ -104,7 +114,7 @@ body {
   opacity: 1;
 } */
 
-.polaroid-image.piano {
+/* .polaroid-image.piano {
   top: 2rem;
   left: 2rem;
 }
@@ -112,14 +122,14 @@ body {
 .polaroid-image.baby {
   top: 26rem;
   left: 2rem;
-}
+} */
 
-.polaroid-image.hut {
+/* .polaroid-image.hut {
   top: 4rem;
   left: 23rem;
-}
+} */
 
-.polaroid-image.graduation {
+/* .polaroid-image.graduation {
   top: 46rem;
   left: 23rem;
 }
@@ -132,15 +142,38 @@ body {
 
 .polaroid-image.contact:hover {
   box-shadow: none;
-}
+} */
 
 /* Hover effect for interactivity */
-.polaroid-image:hover {
+/* .polaroid-image:hover {
   transform: scale(1.05) rotate(-2deg);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
-}
+} */
 
-@media (max-width: 768) {
+@media (max-width: 768px) {
+  /* .polaroid-image.baby,
+  .polaroid-image.hut,
+  .polaroid-image.graduation,
+  .polaroid-image.contact {
+    display: none !important;
+  } */
 
-
+  /* .polaroid-image.piano {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    margin: 20px auto !important;
+    display: block !important;
+    width: 80% !important;
+    max-width: 350px !important;
+  } */
+/* 
+  .intro-text {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    margin: 10px auto !important;
+    text-align: center;
+    font-size: 20px; /* adjust for mobile readability */
+    /* max-width: 90%; */
+  /* } */ 
 }
