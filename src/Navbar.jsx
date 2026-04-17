@@ -1,38 +1,66 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './styles/Navbar.css';
 import { FaApple, FaInstagram, FaSpotify, FaYoutube, FaFacebook, FaTiktok } from "react-icons/fa";
+// import { FaVenmo } from "react-icons/fa6";
+import { SiVenmo } from "react-icons/si";
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="header">
 
-<div className="top-bar">
+      <div className="top-bar">
         <div className="social-icons">
-        <a href="https://music.apple.com/us/artist/yawneazy/1335067186"><FaApple /></a>
-        <a href="https://www.instagram.com/yawneazy"><FaInstagram /></a>
-        <a href="https://open.spotify.com/artist/30z0RH6IuunZkBPKTrRBuO?si=OvNre1EFR6GjP4GFkVamKg"><FaSpotify /></a>
-        <a href="https://youtube.com/@yawneazy?si=EViRk8HwUm4HfsFA"><FaYoutube /></a>
-        <a href="https://www.facebook.com/yawneazy/"><FaFacebook/></a>
-        <a href="https://www.tiktok.com/@yawneazy?is_from_webapp=1&sender_device=pc"><FaTiktok /></a>
+          <a href="https://music.apple.com/us/artist/yawneazy/1335067186"><FaApple /></a>
+          <a href="https://www.instagram.com/yawneazy"><FaInstagram /></a>
+          <a href="https://open.spotify.com/artist/30z0RH6IuunZkBPKTrRBuO"><FaSpotify /></a>
+          <a href="https://youtube.com/@yawneazy"><FaYoutube /></a>
+          <a href="https://venmo.com/u/yawneazy"><SiVenmo /></a>
+          <a href="https://www.facebook.com/yawneazy/"><FaFacebook /></a>
+          <a href="https://www.tiktok.com/@yawneazy"><FaTiktok /></a>
         </div>
       </div>
 
       <div className="nav-container">
 
-        {/* Artist Name */}
         <div className="artist-name">
           <h2>Aly Olson</h2>
         </div>
 
-        <nav>
-          <ul className="nav-links">
-            <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/music">Music</NavLink></li>
-            <li><NavLink to="/shows">Shows</NavLink></li>
-            <li><NavLink to="/about">About</NavLink></li>
-          </ul>
+        <nav className="nav-links">
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/music">Music</NavLink>
+          <NavLink to="/shows">Shows</NavLink>
+          <NavLink to="/about">About</NavLink>
         </nav>
+
+        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          ☰
+        </div>
+      </div>
+
+      {/* always rendered, animated via class */}
+      <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+
+        <div className="mobile-social-icons">
+          <a href="#"><FaApple /></a>
+          <a href="#"><FaInstagram /></a>
+          <a href="#"><FaSpotify /></a>
+          <a href="#"><FaYoutube /></a>
+          <a href="#"><SiVenmo /></a>
+          <a href="#"><FaFacebook /></a>
+          <a href="#"><FaTiktok /></a>
+        </div>
+
+        <div className="nav-group">
+          <NavLink to="/" onClick={() => setMenuOpen(false)}>Home</NavLink>
+          <NavLink to="/music" onClick={() => setMenuOpen(false)}>Music</NavLink>
+          <NavLink to="/shows" onClick={() => setMenuOpen(false)}>Shows</NavLink>
+          <NavLink to="/about" onClick={() => setMenuOpen(false)}>About</NavLink>
+        </div>
+
       </div>
     </header>
   );

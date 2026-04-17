@@ -1,13 +1,20 @@
 import React from 'react';
-// import './styles/Shows.css'
 
 export default function Shows() {
   const shows = [
     {
+      // 7 - 7:30pm
       date: "June 09, 2025",
       venue: "Your Mama's House",
       location: "Tucson, AZ",
-      link: "https://www.buttonbrewhouse.com/"
+      link: "https://ymhtucson.com/"
+    },
+    {
+      // 7 - 7:30pm
+      date: "July 14, 2025",
+      venue: "Your Mama's House",
+      location: "Tucson, AZ",
+      link: "https://ymhtucson.com/"
     },
     {
       date: "July 16, 2025",
