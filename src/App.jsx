@@ -7,6 +7,7 @@ import homeImg from './images/aly_olson_home.jpeg';
 import mobileHomeImg from './images/aly_olson_mobile_home.jpeg';
 import Music from './pages/Music';
 import Shows from './pages/Shows';
+import About from './pages/About';
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
           />
           <Route path="/shows" element={<Shows/>} />
           <Route path="/music" element={<Music/>} />
-          {/* <Route path="/about" element={<h1>About</h1>} /> */}
+          <Route path="/about" element={<About/>} />
         </Routes>
       </div>
     </>

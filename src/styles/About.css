@@ -1,0 +1,143 @@
+.about-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #111;
+  }
+  
+  /* HERO */
+  .about-hero {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .about-hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  
+  .tagline {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* =========================
+     DESKTOP LAYOUT ONLY
+  ========================= */
+  
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* LEFT */
+  .about-bio {
+    flex: 1;
+    line-height: 1.7;
+    font-size: 1.05rem;
+  }
+  
+  .about-bio p {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* RIGHT */
+  .about-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* IMAGE */
+  .about-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .about-image img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  /* CONTACT (UNCHANGED) */
+  .about-contact {
+    text-align: center;
+  }
+  
+  .about-contact h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-email {
+    display: inline-block;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #111;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .contact-email:hover {
+    border-bottom: 1px solid #111;
+  }
+  
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .contact-links a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+  }
+  
+  .contact-links a:hover {
+    color: #888;
+  }
+  
+  @media (max-width: 768px) {
+
+    .about-page {
+      padding: 2rem 1.5rem;
+      padding-top: 120px;
+    }
+  
+    .about-hero h1 {
+      font-size: 3rem;
+    }
+  
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .about-side {
+      width: 100%;
+    }
+  
+    .about-image img {
+      width: 80%;
+      height: auto;
+    }
+  
+    .contact-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
