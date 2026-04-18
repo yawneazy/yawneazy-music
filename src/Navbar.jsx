@@ -48,13 +48,13 @@ export default function Navbar() {
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
 
         <div className="mobile-social-icons">
-          <a href="#"><FaApple /></a>
-          <a href="#"><FaInstagram /></a>
-          <a href="#"><FaSpotify /></a>
-          <a href="#"><FaYoutube /></a>
-          <a href="#"><SiVenmo /></a>
-          <a href="#"><FaFacebook /></a>
-          <a href="#"><FaTiktok /></a>
+        <a href="https://music.apple.com/us/artist/yawneazy/1335067186"><FaApple /></a>
+          <a href="https://www.instagram.com/yawneazy"><FaInstagram /></a>
+          <a href="https://open.spotify.com/artist/30z0RH6IuunZkBPKTrRBuO"><FaSpotify /></a>
+          <a href="https://youtube.com/@yawneazy"><FaYoutube /></a>
+          <a href="https://venmo.com/u/yawneazy"><SiVenmo /></a>
+          <a href="https://www.facebook.com/yawneazy/"><FaFacebook /></a>
+          <a href="https://www.tiktok.com/@yawneazy"><FaTiktok /></a>
         </div>
 
         <div className="nav-group">
