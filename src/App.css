@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap');
-
 body {
+  /* margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  /* background-color: #EEE9E9; 
+  background-color: #1e1e1e; */ 
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #EEE9E9;
-  /* background-color: #1e1e1e; */
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 @keyframes fadeIn {

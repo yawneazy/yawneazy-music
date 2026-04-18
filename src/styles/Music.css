@@ -1,10 +1,29 @@
-.music-embed {
-    max-width: 700px;   /* controls size */
-    margin: 2rem auto;  /* centers it + adds top/bottom spacing */
-    padding: 0 1rem;    /* gives side breathing room on mobile */
-  }
+ /* .music-page {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* padding-top: 120px; */
+  /* padding: 2rem;
+  min-height: 60vh;
+  box-sizing: border-box; */
+/* } */ 
 
-  .music-embed iframe {
-    display: block;
-    width: 100%;
+.music-page {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.music-page iframe {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .music-page {
+    padding-top: 200px;
   }
+}

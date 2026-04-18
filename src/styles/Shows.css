@@ -1,35 +1,116 @@
 .shows-page {
+  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #111;
+    min-height: 100vh;
     padding: 2rem;
-    color: white;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
   }
-  
-  .shows-list {
-    display: flex;
+
+/* LIST WRAPPER */
+.shows-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* EVENT ROW CARD */
+.event-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* DATE BLOCK */
+.event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Bebas Neue', sans-serif;
+  min-width: 70px;
+}
+
+.event-date .month {
+  font-size: 1rem;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+}
+
+.event-date .day {
+  font-size: 3rem;
+  font-family: 'Bebas Neue', sans-serif;
+  line-height: 1;
+}
+
+/* VENUE IMAGE */
+.event-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* INFO SECTION */
+.event-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.event-info h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.event-info p {
+  margin: 0;
+  color: #555;
+}
+
+.event-info a {
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  width: fit-content;
+}
+
+.event-info a:hover {
+  border-bottom: 1px solid #111;
+}
+
+/* HOVER EFFECT */
+.event-card:hover {
+  background-color: rgba(0,0,0,0.03);
+  transition: 0.2s ease;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  .shows-page {
+    padding-top: 150px;
+  }
+}
+
+  .event-card {
     flex-direction: column;
-    gap: 1.5rem;
-    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .event-image img {
+    width: 80%;
+    height: auto;
+  }
+
+  .event-info {
     align-items: center;
   }
-  
-  .show-card {
-    background-color: #111;
-    border: 1px solid #333;
-    padding: 1.5rem;
-    width: 100%;
-    max-width: 500px;
-    border-radius: 10px;
-  }
-  
-  .show-card h3 {
-    margin: 0;
-    letter-spacing: 1px;
-  }
-  
-  .show-card button {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    cursor: pointer;
-  }
+}

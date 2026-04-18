@@ -2,14 +2,17 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './styles/Navbar.css';
 import { FaApple, FaInstagram, FaSpotify, FaYoutube, FaFacebook, FaTiktok } from "react-icons/fa";
-// import { FaVenmo } from "react-icons/fa6";
 import { SiVenmo } from "react-icons/si";
+import { useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   return (
-    <header className="header">
+    // <header className="header">
+    <header className={`header ${isHome ? "home" : "not-home"}`}>
 
       <div className="top-bar">
         <div className="social-icons">

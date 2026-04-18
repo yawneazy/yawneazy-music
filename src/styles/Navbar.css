@@ -83,6 +83,24 @@
       border-bottom: none;
       z-index: 20;
     }
+
+    .header.home .artist-name h2,
+  .header.home .hamburger,
+  .header.home .mobile-social-icons a,
+  .header.home .nav-group a {
+    color: white;
+  }
+
+  .header.not-home {
+    background: #EEE9E9;
+  }
+
+  .header.not-home .artist-name h2,
+  .header.not-home .hamburger,
+  .header.not-home .mobile-social-icons a,
+  .header.not-home .nav-group a {
+    color: black;
+  }
   
     .top-bar {
       display: none;
