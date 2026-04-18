@@ -8,7 +8,6 @@ export default function About() {
 
       {/* HERO */}
       <section className="about-hero">
-        <h1>Aly Olson</h1>
         <p className="tagline">Singer • Songwriter • Performer</p>
       </section>
 
@@ -37,15 +36,9 @@ export default function About() {
             <img src={aboutImg} alt="Artist about image" />
           </section>
 
-          {/* <p className="tagline">
-            Singer • Songwriter • Performer
-          </p> */}
-
         </div>
-
       </div>
 
-      {/* CONTACT (UNCHANGED) */}
       <section className="about-contact">
         <h2>Contact</h2>
 
