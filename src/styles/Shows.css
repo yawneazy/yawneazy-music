@@ -46,12 +46,12 @@
 }
 
 /* VENUE IMAGE */
-.event-image img {
+/* .event-image img {
   width: 120px;
   height: 120px;
   object-fit: cover;
   border-radius: 10px;
-}
+} */
 
 /* INFO SECTION */
 .event-info {
@@ -84,20 +84,18 @@
   border-bottom: 1px solid #111;
 }
 
+  /* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+  .shows-page {
+    padding-top: 150px;
+  }
+
 /* HOVER EFFECT */
 .event-card:hover {
   background-color: rgba(0,0,0,0.03);
   transition: 0.2s ease;
-}
-
-/* =========================
-   MOBILE
-========================= */
-@media (max-width: 768px) {
-
-  .shows-page {
-    padding-top: 150px;
-  }
 }
 
   .event-card {

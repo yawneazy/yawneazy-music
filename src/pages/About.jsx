@@ -5,16 +5,11 @@ import aboutImg from '../images/about_page_img.jpg';
 export default function About() {
   return (
     <div className="about-page">
-
-      {/* HERO */}
       <section className="about-hero">
         <p className="tagline">Singer • Songwriter • Performer</p>
       </section>
 
-      {/* DESKTOP LAYOUT WRAPPER */}
       <div className="about-content">
-
-        {/* LEFT SIDE */}
         <section className="about-bio">
           <p>
             Alyssa K is a Tucson-based musician blending indie, pop, and acoustic influences.
@@ -29,7 +24,6 @@ export default function About() {
           </p>
         </section>
 
-        {/* RIGHT SIDE */}
         <div className="about-side">
 
           <section className="about-image">

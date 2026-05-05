@@ -1,9 +1,4 @@
 body {
-  /* margin: 0;
-  padding: 0;
-  /* overflow: hidden; */
-  /* background-color: #EEE9E9; 
-  background-color: #1e1e1e; */ 
   margin: 0;
   padding: 0;
   background-color: #EEE9E9;
@@ -23,14 +18,7 @@ body {
 }
 
 .back-btn {
-    /* marginBottom: '1rem'; */
-    /* padding: '0.5rem 1rem'; */
-    /* background: 'transparent'; */
-    /* color: "#FFF";
-    color */
-    /* border: '1px solid white'; */
-    /* borderRadius: '4px'; */
-    cursor: 'pointer';
+    cursor: pointer;
 }
 
 h1 {
@@ -51,11 +39,11 @@ h1 {
 .nav-links a:hover {
   color: #cccccc;
 }
+
 .home-image {
   width: 100%;
   height: auto;
   object-fit: cover;
-  /* display: block; */
 }
 
 .home-image.mobile {

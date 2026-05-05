@@ -1,0 +1,64 @@
+.support-page {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 4rem 1.5rem;
+    text-align: center;
+  }
+  
+  .support-card {
+    max-width: 520px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 18px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  }
+  
+  .support-card h1 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    color: #2f2b33;
+  }
+  
+  .support-card p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  .venmo-button {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 14px;
+    background: black;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .venmo-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px black;
+  }
+  
+  .secondary-link {
+    display: inline-block;
+    margin-left: 12px;
+    padding: 14px 22px;
+    border-radius: 14px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    color: #2f2b33;
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+  
+  .secondary-link:hover {
+    border-color: #000;
+    color: #000;
+  }

@@ -39,6 +39,12 @@ export default function Shows() {
       venue: "Water Lantern Festival",
       location: "Tucson, AZ",
       link: "https://www.waterlanternfestival.com/"
+    },
+    {
+      date: "May 6, 2026",
+      venue: "Big Bad Wolf",
+      location: "Tucson, AZ",
+      link: "https://www.buttonbrewhouse.com/"
     }
   ];
 
@@ -54,7 +60,8 @@ export default function Shows() {
       <h1>Shows</h1>
 
       {/* <div className="shows-list">
-        {shows.map((show, index) => { */}
+        {shows.map((show, index) => { 
+          code below puts the newest items at the top */}
         <div className="shows-list">
           {[...shows]
             .sort((a, b) => new Date(b.date) - new Date(a.date))
