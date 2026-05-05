@@ -11,6 +11,7 @@ function Support() {
             If you enjoyed the music, you can support me below! It means a lot and helps me keep creating. <FaHeart />
           </p>
       
+      <div className="button-group">
           <a
             href="https://account.venmo.com/u/yawneazy"
             target="_blank"
@@ -23,6 +24,7 @@ function Support() {
           <a href="/" className="secondary-link">
             Visit my website
           </a>
+          </div>
         </div>
       </section>
       );

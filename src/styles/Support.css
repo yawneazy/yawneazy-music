@@ -29,33 +29,49 @@
     margin-bottom: 1.5rem;
     line-height: 1.5;
   }
+
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  /* buttons */
+  .venmo-button,
+  .secondary-link {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
   
-  .venmo-button {
-    display: inline-block;
-    padding: 14px 22px;
+    width: 100%;
+    max-width: 280px;
+    height: 52px; 
+  
     border-radius: 14px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+  
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+  }
+
+  .venmo-button {
     background: black;
     color: white;
-    font-weight: 600;
-    text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   
   .venmo-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 2px 5px black;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
   
+  /* home button */
   .secondary-link {
-    display: inline-block;
-    margin-left: 12px;
-    padding: 14px 22px;
-    border-radius: 14px;
     background: transparent;
     border: 1px solid rgba(0, 0, 0, 0.12);
     color: #2f2b33;
-    text-decoration: none;
-    transition: 0.2s ease;
   }
   
   .secondary-link:hover {
