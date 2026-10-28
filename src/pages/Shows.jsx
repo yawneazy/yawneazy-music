@@ -20,7 +20,7 @@ export default function Shows() {
       date: "July 16, 2025",
       venue: "Big Bad Wolf",
       location: "Tucson, AZ",
-      link: "https://www.buttonbrewhouse.com/"
+      link: "https://bigbadwolftucson.com/"
     },
     {
       date: "December 09, 2025",
@@ -44,7 +44,19 @@ export default function Shows() {
       date: "May 6, 2026",
       venue: "Big Bad Wolf",
       location: "Tucson, AZ",
-      link: "https://www.buttonbrewhouse.com/"
+      link: "https://bigbadwolftucson.com/"
+    },
+    {
+      date: "August 12, 2026",
+      venue: "Big Bad Wolf",
+      location: "Tucson, AZ",
+      link: "https://bigbadwolftucson.com/"
+    },
+    {
+      date: "September 30, 2026",
+      venue: "Big Bad Wolf",
+      location: "Tucson, AZ",
+      link: "https://bigbadwolftucson.com/"
     }
   ];
 
